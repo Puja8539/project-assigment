@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>EmployeeId*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="EmployeeId" id="EmployeeId">
+                    </div>
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="Name" id="Name">
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <input type="text" name="Address" id="Address">
+                    </div>
+                    <div>
+                        <label>Gender</label>
+                        <input type="text" name="Gender" id="Gender">
+                    </div>
+                    <div>
+                        <label>Salary</label>
+                        <input type="text" name="Salary" id="Salary">
+                    </div>
+                    <div>
+                        <label>Birthdate</label>
+                        <input type="text" name="Birthdate" id="Birthdate">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>EmployeeId</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Gender</th>
+                            <th>Salary</th>
+                            <th>Birthdate</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
